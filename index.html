@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="card.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -125,14 +126,32 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-center align-items-center btn-4 input-fields">
+                <div class="row align-items-left btn-4 input-fields">
 
-                    <div class="col-sm-6 col-md-3 fuel">
+
+                    <div class="col-sm-6 col-md-3 order">
+                        <button class="fuel-order" type="submit" id="sendMessageButton">Order Fuel</button>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 order">
+                        <button class="fuel-order2" type="submit" id="sendMessageButton">Register</button>
+                    </div>
+                    
+                    <!-- <div class="col-sm-6 col-md-3 fuel"> -->
+                        <!-- <input type="text" class="fuel-input" id="subject" name="subject" placeholder="Fuel Amount"
+                           required="required" data-validation-required-message="Please enter a subject"/> -->
+                        <!-- <input type="number" name="fuel-amount" class="fuel-input" placeholder="Fuel Amount">
+                        <p class="help-block"></p>
+                    </div> -->
+
+                    
+
+                    <!-- <div class="col-sm-6 col-md-3 fuel"> -->
                         <!-- <select type="text" class="fuel-input" id="name" name="name" placeholder="Fuel Type"
                     required="required" data-validation-required-message="Please enter your name"/>
                     <option selected value="Octen"></option>
                 </select> -->
-                        <select name="fuel-type" class="fuel-input">
+                        <!-- <select name="fuel-type" class="fuel-input">
                             <option selected disabled value="select">Fuel Type</option>
                             <option value="Diesel">Diesel</option>
                             <option value="Gasoline">Gasoline</option>
@@ -142,12 +161,13 @@
                             <option value="Ethanol">Ethanol</option>
                         </select>
                         <p class="help-block"></p>
-                    </div>
-
-                    <div class="col-sm-6 col-md-3 fuel">
+                    </div> -->
+                
+                
+                    <!-- <div class="col-sm-6 col-md-3 fuel"> -->
                         <!-- <input type="text" class="fuel-dropdown" id="subject" name="subject" placeholder="Order Area"
                            required="required" data-validation-required-message="Please enter a subject"/> -->
-                        <select name="fuel-type" class="fuel-input">
+                        <!-- <select name="fuel-type" class="fuel-input">
                             <option selected disabled value="select">Order Area</option>
                             <option value="Diesel">Gulshan</option>
                             <option value="Gasoline">Dhanmondi</option>
@@ -155,19 +175,10 @@
                             <option value="LPG">Azipmur</option>
                         </select>
                         <p class="help-block"></p>
-                    </div>
+                    </div> -->
 
 
-                    <div class="col-sm-6 col-md-3 fuel">
-                        <!-- <input type="text" class="fuel-input" id="subject" name="subject" placeholder="Fuel Amount"
-                           required="required" data-validation-required-message="Please enter a subject"/> -->
-                        <input type="number" name="fuel-amount" class="fuel-input" placeholder="Fuel Amount">
-                        <p class="help-block"></p>
-                    </div>
-
-                    <div class="col-sm-6 col-md-3 order">
-                        <button class="fuel-order" type="submit" id="sendMessageButton">Send Message</button>
-                    </div>
+                    
 
                 </div>
 
