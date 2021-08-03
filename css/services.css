@@ -224,7 +224,7 @@ hr{
 }
 
 .pos{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     font-family: Montserrat;
     font-style: normal;
     font-weight: 900;
@@ -440,14 +440,13 @@ form .message::placeholder {
     transition:1s;
     
 }
-
+/* 
 .card:hover{
-    /* transform: scale(1.05); */
     background: #F6822A;
     transition: 0.3s;
     opacity: 1;
   
-}
+} */
 .card-text{
   height:80px;  
 }

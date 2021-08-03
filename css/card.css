@@ -1,10 +1,10 @@
 #iconsvg path {
     fill: #F57329;
  }
- 
+/*  
  #iconsvg:hover path{
     fill: white;
- }
+ } */
  
 /* svg {
     padding-top: 3rem;
@@ -25,9 +25,7 @@
     fill: #F57329;
  }
  
- #iconsvg2:hover path{
-    fill: white;
- }
+
  
 /* svg {
     padding-top: 3rem;
