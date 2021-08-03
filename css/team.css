@@ -1,0 +1,63 @@
+@media (max-width: 770px)
+{
+    .teams{
+        height: auto;
+        width:100%;
+    }
+    
+    .teams p{
+        color: #F57329;
+        font-style: normal;   
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 0.7rem;
+    
+    }
+    
+    .teams a img{
+        width: 70%;
+        margin-bottom: 5rem;
+        height:auto;
+    }
+
+    .name{
+        padding-left: 1.5rem;
+    }
+
+    .bttn{
+        padding-left:1rem;
+    }
+    
+    .teams h2{
+        font-weight: bold;
+        font-size: 64px;
+        color: #F57329;
+    }
+       
+    .teams h6{
+        text-align: center;
+        text-align: left;
+        margin-left: 2rem;
+      
+    }
+}
+
+@media (max-width: 995px)
+{
+    .teams p
+    {
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 750px)
+{
+    .teams p{
+        text-align: center;
+    }
+
+    .teams h6{
+        text-align: center;
+        
+    }
+}
