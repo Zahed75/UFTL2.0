@@ -27,7 +27,7 @@
         width: 30%;
         margin-bottom: 3rem;
         height:auto;
-        margin-left: 7rem;
+        margin-left: 10.5rem;
         margin-top: -1.5rem;
         /* margin-right: auto; */
         
@@ -82,3 +82,26 @@
 .name {
     margin-top: 0.8rem;
 }
+
+
+@media (max-width: 414px){
+    .teams a img{
+        margin-left: 7.7rem;
+    }
+
+    .teams p{
+        margin-right: 3.5rem;
+    }
+    .teams h6{
+        margin-right: 4rem;
+    }
+}
+
+
+@media  only screen and (max-width: 375px){
+    .teams a img{
+        margin-left: 7rem;
+        width: 6.5rem;
+    }
+}
+
