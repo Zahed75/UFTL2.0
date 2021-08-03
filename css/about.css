@@ -301,9 +301,8 @@ text-transform: capitalize;
     padding-top: 2rem;
     font-size: 1.8rem;
     text-align: center;
-    font-weight: 700;
-    font-family: Montserrat;
-    font-style: normal;
+    font-weight: 500;
+   
     line-height: 40px;
 }
 .card-heading3{
@@ -412,6 +411,7 @@ text-transform: capitalize;
     .card-text-4{
         font-size: 1rem;
         line-height: 1.5rem;
+       
     }
 
     .vl {
