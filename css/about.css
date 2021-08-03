@@ -466,10 +466,9 @@ text-transform: capitalize;
         padding: 6px;
     }
 
-    .sahed{
-        height: auto;
-        width: auto;
-        padding: 6px;
+    
+    .saw{
+        display: none;
     }
 }
 
