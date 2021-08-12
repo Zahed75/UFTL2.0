@@ -9,7 +9,7 @@
 
 /*===== VARIABLES CSS =====*/
 
-:root {
+ :root {
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -359,7 +359,7 @@ progress {
     -webkit-appearance: none;
 }
 
-::-webkit-file-upload-button {
+ ::-webkit-file-upload-button {
     font: inherit;
     -webkit-appearance: button;
 }
@@ -591,18 +591,9 @@ pre code {
     margin-left: auto;
 }
 
-@media only screen and (max-width: 380px) {
-    .container {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-}
-
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
-        padding-right: 0px;
-        padding-left: 0px;
     }
 }
 
@@ -725,7 +716,7 @@ pre code {
 .col-xl-auto {
     position: relative;
     width: 100%;
-    padding-right: 55px;
+    /* padding-right: 55px; */
     /* padding-left: 15px; */
 }
 
@@ -11148,4 +11139,4 @@ a[data-toggle="collapse"] {
 
 
 /* 
-*/
+ */
