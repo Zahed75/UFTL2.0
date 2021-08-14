@@ -1,94 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset- "UTF-8">
-    <meta name="viewport" content="width=device-width, initial">
-    <title>FORM PAGE
-    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
 
-    <!--CSS LINK======================================================-->
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/form.css">
-    <!--BOOTSTRAP CSS=================================================-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/form.css">
 </head>
-
 <body>
-    <div class="row mt-5">
-
-        <div class="col-lg-3"></div>
-
-
-        <div class=" col-lg-6">
-            <form>
-                <div class="form-row">
-                    <div class="row  mb-3">
-                        <div class="col-lg-6 form col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name*" required>
-                        </div>
-
-                        <div class="col-lg-6 form col-md-6">
-                            <input type="text" class="form-control" placeholder="Company Name*" required>
-                        </div>
-                    </div>
-
-
-                    <div class="row mb-3">
-                        <div class="col-lg-6 form col-md-6">
-                            <input type="tel" class="form-control" placeholder="Phone Number*" required>
-                        </div>
-
-                        <div class="col-lg-6 form col-md-6">
-                            <input type="email" class="form-control" placeholder="Email(Optional)">
-                        </div>
-                    </div>
-
-
+    
+    <div class="container">
+        <div class="form-section d-flex justify-content-center align-items-center my-5">
+            <form method="POST" class="form-group">
+                <div class="row-fields d-flex flex-row flex-wrap">
+                    <input type="text" placeholder="Full Name*" class="form-control custom-form">
+                    <input type="text" placeholder="Company Name" class="form-control custom-form">
+                </div>
                 
-                    <div class="row mb-3">
-                        <div class="col-lg-6 form col-md-6">
-                            <input type="input" class="form-control form" placeholder="Fuel Amount(Liter)*" required>
-                        </div>
-
-                        <div class="col-lg-6  col-md-6">
-                            <input type="email" class="form-control form-box" placeholder="What is (7-5)?">
-                        </div>
-                    </div>
-
+                <div class="row-fields d-flex flex-row flex-wrap">
+                    <input type="number" placeholder="Phone Number*" class="form-control custom-form">
+                    <input type="text" placeholder="Email (Optional)" class="form-control custom-form">
                 </div>
-                <div class="row ">
-                    <div class="col-lg-12  col-md-12 mb-3">
-                        <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" ></textarea>
-                    </div>
+                
+                <div class="row-fields d-flex flex-row flex-wrap">
+                    <select class="custom-form" name="fuel_type">
+                        <option selected disabled>Fuel Type*</option>
+                        <option value="Disel">Disel</option>
+                        <option value="Octen">Octen</option>
+                    </select>
+                    
+                    <select class="custom-form" name="order_area">
+                        <option selected disabled>Order Area*</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Azimpur">Azimpur</option>
+                    </select>
+                </div>
+                
+                <div class="row-fields d-flex flex-row flex-wrap">
+                    <input type="number" placeholder="Fuel Amount*" class="form-control custom-form">
+                    <input type="text" placeholder="What is (7-5)?*" class="form-control custom-form">
                 </div>
 
-
-                <div class="row">
-                    <div class="col-lg-6"></div>
-
-                    <div class="col-lg-6">
-                        <a href="#"><p class="submit">Submit</p>
-                        </a>
-                    </div> 
+                <textarea name="message" rows="5" class="form-control custom-message" placeholder="Message (Optional)"></textarea>
+                <div class="d-flex flex-row-reverse">
+                    <input type="submit" value="Submit" class="btn custom-btn">
                 </div>
             </form>
-        </div>
-
-        <div class="col-lg-3"></div>
-
+        </div> 
     </div>
-    <!--Bootstrap JQuery,  Popper.JS, Bootstrap js LINK===================================================================================================================================================-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-</body>
 
+    <script src="./js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>

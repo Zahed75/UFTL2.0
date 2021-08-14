@@ -1,58 +1,85 @@
-html {
-    scroll-behavior: "smooth";
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-* {
-    margin: 0px;
-    padding: 0, 10px;
-    box-sizing: border-box;  
-}
-.home{
-    color:#FF6F00;
-    font-weight: bold;
-    font-size: 18px;
-    margin-top: 6px;
-    text-align: right;
-}
+/* ============ To remove all kinds of form focus and hover effect from bs =========== */
 
-.user img {
-        padding: 50px;
-        height: 50%;
-        width: 550px;
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
 }
 
 
-input[type=text] {
-    width: 100%;
-    padding: 30px 30px;
-    box-sizing: border-box;
-    border:1.5px solid rgb(216, 57, 9);
-    border-radius:15px;
-    font-size: 13px;
-  }
+/* ============ To remove all kinds of form focus and hover effect from bs =========== */
 
-  input[type=password] {
-    width: 100%;
-    padding: 30px 30px;
-    box-sizing: border-box;
-    border:1.5px solid rgb(216, 57, 9);
-    border-radius:15px;
-    font-size: 13px;
-  }
+/* ============ To remove all kinds of button focus effect from bs =========== */
 
-  .login{
-    text-align: center;
+.btn:focus, .btn:active:focus, .btn.active:focus{
+    outline:none;
+    box-shadow:none;
+}
+
+.back-section a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #FF6F00;
+}
+
+.form-input-field {
+    width: 400px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid #FF6F00;
+    border-radius: 10px;
+}
+
+.hide-btn {
+    cursor: pointer;
+}
+
+.form-btn {
+    width: 400px;
+    padding: 10px;
+    color: #fff;
+    height: 55px;
+    border-radius: 10px;
     background: linear-gradient(90deg, #F8962C 0%, #EF3C26 100%);
-    color: white;
-    font-weight: 600;
-    padding:20px 40px;
-    border-radius:15px;
-    width:100%;
 }
-.alternative{
-    font-size: 20px;
+
+.form-input-field input {
+    border: none;
 }
-.register a{
-    font-weight: bold;
-    color:#FF6F00   
+
+.form-text p a {
+    text-decoration: none;
+    color: #FF6F00;
+}
+
+.form-input-field input:focus {
+    box-shadow: none !important;
+}
+
+.form-input-field input::placeholder {
+    color: gray;
+}
+
+@media (max-width: 426px) {
+    .form-input-field {
+        width: 300px;
+    }
+
+    .form-btn {
+        width: 300px;
+    }
 }
