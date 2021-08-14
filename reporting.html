@@ -137,11 +137,7 @@
                         </select>
                     </div>
                     <div class="col-2">
-                        <select name="fuel-type" class="datarange">
-                            <option selected disabled value="select">Date Range</option>
-                            <option value="Diesel">Diesel</option>
-                            <option value="Gasoline">Octane</option>
-                        </select>
+                        <input type="date" id="birthday" class="datarange" placeholder="Date Range" onchange="this.className=(this.value!=''?'has-value':'')">
                     </div>
                     <div class="col-2">
                         <select name="fuel-type" class="status">

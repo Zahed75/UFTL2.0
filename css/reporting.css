@@ -700,3 +700,8 @@ body {
         font-size: 0.5rem;
     }
 }
+
+input[type="date"]:not(.has-value):before {
+    color: #ff6f00;
+    content: attr(placeholder);
+}
