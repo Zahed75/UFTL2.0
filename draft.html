@@ -2,13 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Dashboard</title>
+    <title>Draft</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- cdn -->
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,19 +13,16 @@
     <link rel="stylesheet" href="css/image.css">
     <link rel="stylesheet" href="css/input.css">
     <link rel="stylesheet" href="css/select.css">
-    <link rel="stylesheet" href="css/editprofile.css">
     <link rel="stylesheet" href="css/custom-sidebar.css">
-    <link rel="stylesheet" href="css/dashboard-sidebar.css">
-
-    <link rel="stylesheet" href="/assets/css/dashboard.css">
-    <link rel="stylesheet" href="/assets/css/chartjs.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="draft.css">
 </head>
 
 <body>
 
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
-            <div class="p-2 pt-1">
+            <div class="p-4 pt-5">
 
                 <a href="#" class="nav__logo">
                     <div class="logoside">
@@ -43,60 +36,25 @@
                 </a>
 
                 <a href="#" class="img logo rounded-circle mb-2" style="background-image: url(assets/img/saul.png);"> </a>
-                <h3 class="text-center mb-4 username">Saul Ramirez</h3>
+                <h3 class="text-center mb-5 username">Saul Ramirez</h3>
 
-                <ul class="list-unstyled components mb-2 p-2">
 
-                    <li>
-                        <a href="#"><i class='bx bxs-dashboard setup'></i>Dashboard</a>
-                    </li>
+
+                <ul class="list-unstyled components mb-5">
 
                     <li>
-                        <a href="#"><i class='bx bx-list-check setup'></i>Place an Order</a>
-                    </li>
 
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class='bx bx-info-circle setup'></i>Assets</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li>
-                                <a href="#"><i class='bx bx-radio-circle-marked setup'></i>All Assets</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class='bx bx-radio-circle-marked setup'></i>Add an Asset</a>
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class='bx bx-clipboard setup'></i>Reporting</a>
-                    </li>
-
-                    <li>
                         <a href="#">
-                            <ion-icon class="setup" name="settings-outline"></ion-icon>Edit Profile</a>
+                            <ion-icon class="setup" name="person-outline"></ion-icon> Setup Profile</a>
                     </li>
 
 
-                    <div class="logout">
-                        <button class="livechat" type="submit" id="sendMessageButton">Live Chat</button>
-                        <div class="logoutline"></div>
-                        <li>
-                            <a href="#">
-                                <ion-icon class="setup" name="log-out-outline"></ion-icon>
-                                </ion-icon>Log Out</a>
-                        </li>
-                    </div>
+
                 </ul>
 
                 <div class="footer">
                     <p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <!-- Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a> -->
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
                     </p>
                 </div>
 
@@ -104,7 +62,7 @@
         </nav>
 
         <!-- Page Content  -->
-        <div id="content" class="p-4 p-md-3">
+        <div id="content" class="p-4 p-md-5">
 
             <nav class="">
                 <div class="container-fluid">
@@ -113,6 +71,8 @@
                         <i class="fa fa-bars"></i>
                         <span class="sr-only">Toggle Menu</span>
                      </button>
+
+
 
                     <div class="float-right">
                         <div class=" menu ">
@@ -125,147 +85,214 @@
                             <p class="back">Back to Home</p>
                         </div>
                     </div>
-                    <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <i class="fa fa-bars"></i>
-                  </button> -->
 
-                    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div> -->
                 </div>
             </nav>
 
+            <div class="container">
+
+                <div class="row justify-content-end">
 
 
-            <div id="content" class="p-4 p-md-5">
+
+                    <div class="container mt-5">
 
 
+                        <div class="form-section d-flex justify-content-center align-items-center my-5">
+                            <form id="regForm" method="POST" class="form-group">
+                                <div class="tab">
+                                    <div class="row justify-content-center align-content-start ipad">
 
-                <h3>2 Columns</h3>
-                <div class="container">
-                    <div class="row">
+                                        <div class="col-sm-6 col-md-6 ">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="headingtext2">Asset
 
-                        <div class="col-12 col-sm-6">
-                            <div class="mainbox">
-                                <div class="maincontent">
-                                    <div class="row">
-                                        <div class="col-sm-8">
-                                            <h3 class="hello-user">Hello, Saul</h3>
-                                            <p><span class="date-time" id='date-time'></span></p>
+                                                    </p>
+                                                </div>
 
-                                            <p class="description">We have made our order process as simple as possible!
-                                                <bold class="description-bold"> Let’s have some fuel!</bold>
-                                            </p>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3 fuel">
 
-                                            <a href="#" class="order-fuel">Order Fuel</a>
-                                        </div>
-
-                                        <div class="col-sm-2">
-
-                                            <div class="transparent-background">
-                                                <img class="doll" src="assets/img/doll.png" alt="">
+                                                <input type="text" name="fuel-amount" oninput="this.className = ''" class="fuel-input" placeholder="Asset Name*">
+                                                <p class="help-block"></p>
                                             </div>
 
+                                            <div class="col-sm-6 col-md-3 fuel">
+                                                <select name="fuel-type" class="fuel-input22">
+                                                    <option selected disabled value="select">Asset type*</option>
+                                                    <option value="Diesel">Generator</option>
+                                                    <option value="Gasoline">Vehicles</option>
+                                                    <option value="Kerosene">Construction</option>
+                                                    <option value="LPG">Machines</option>
+                                                </select>
+                                                <p class="help-block"></p>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 fuel">
+                                                <select name="fuel-type" class="fuel-input3">
+                                                    <option selected disabled value="select">Fuel Type*</option>
+                                                    <option value="Diesel">Diesel</option>
+                                                    <option value="Gasoline">Octane</option>
+                                            </select>
+                                                <p class="help-block"></p>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 fuel">
+                                                <input type="text" oninput="this.className = ''" name="fuel-amount" class="fuel-input" placeholder="Asset Location*">
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-7 col-md-3">
+
+                                            <div class="col-sm-6 col-md-3 rightsection">
+                                                <div class="file-upload">
+
+
+                                                    <div class="image-upload-wrap">
+
+                                                        <input class="file-upload-input" oninput="this.className = ''" type='file' onchange="readURL(this);" accept="image/*" />
+                                                        <div class="drag-text">
+                                                            <p class="drag2">Photo/Logo (Optional)</p>
+                                                            <svg class="icon-image2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM5 19V5h14l.002 14H5z"></path><path d="m10 14-1-1-3 4h12l-5-7z"></path></svg>
+                                                            <h3 class="drapanddrop">Drag and drop a photo or<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">browse</button>a file or upload!
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="file-upload-content">
+                                                        <img class="file-upload-image" src="#" alt="your image" />
+                                                        <div class="image-title-wrap">
+                                                            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <button class="fuel-ordery" type="submit" id="sendMessageButton">Next</button>
+
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="tab">
+                                    <div class="row justify-content-center align-content-start">
+
+                                        <div class="col-sm-7 col-md-4 ">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="headingtext2">Contact Info
+
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 fuel">
+                                                <input type="number" name="fuel-amount" oninput="this.className = ''" class="fuel-input" placeholder="Full Name*">
+                                                <p class="help-block"></p>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 fuel">
+                                                <input type="number" name="fuel-amount" oninput="this.className = ''" class="fuel-input" placeholder="Company Name">
+                                                <p class="help-block"></p>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 fuel">
+                                                <input type="number" name="fuel-amount" oninput="this.className = ''" class="fuel-input" placeholder="Phone Number*">
+                                                <p class="help-block"></p>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 fuel">
+                                                <input type="number" name="fuel-amount" oninput="this.className = ''" class="fuel-input" placeholder="Email">
+                                                <p class="help-block"></p>
+                                            </div>
+
+                                            <div class="col-sm-6 col-md-3 fuel">
+                                                <select name="fuel-type" class="fuel-input23">
+                                                            <option selected disabled value="select">Area*</option>
+                                                            <option value="Diesel">Generator</option>
+                                                            <option value="Gasoline">Vehicles</option>
+                                                            <option value="Kerosene">Construction</option>
+                                                            <option value="LPG">Machines</option>
+                                                        </select>
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-7 col-md-6">
+
+                                            <div class="col-sm-6 col-md-3 rightsection">
+                                                <div class="col-sm-6 col-md-3 fuel">
+                                                    <div class="file-upload">
+
+
+                                                        <div class="image-upload-wrap">
+
+                                                            <input class="file-upload-input" oninput="this.className = ''" type='file' onchange="readURL(this);" accept="image/*" />
+                                                            <div class="drag-text">
+                                                                <p class="drag2">Photo/Logo (Optional)</p>
+                                                                <svg class="icon-image2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM5 19V5h14l.002 14H5z"></path><path d="m10 14-1-1-3 4h12l-5-7z"></path></svg>
+                                                                <h3 class="drapanddrop">Drag and drop a photo or<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">browse</button>a file or upload!
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="file-upload-content">
+                                                            <img class="file-upload-image" src="#" alt="your image" />
+                                                            <div class="image-title-wrap">
+                                                                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="col-sm-6 col-md-3 fuel">
+                                                    <select name="fuel-type" oninput="this.className = ''" class="fuel-input44">
+                                                                <option selected disabled value="select">City*</option>
+                                                                <option value="Dhaka">Dhaka</option>
+                                                                <option value="Chittagong">Chittagong</option>
+                                                                
+                                                            </select>
+                                                    <p class="help-block"></p>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-3 fuel">
+                                                    <input type="text" name="fuel-amount" oninput="this.className = ''" class="fuel-input25" placeholder="Billing Address*">
+                                                    <p class="help-block"></p>
+                                                </div>
+                                                <button class="fuel-ordery" type="submit" id="sendMessageButton">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="overflow:auto;">
+                                    <div style="float:right;">
+                                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
 
-                        <div class="col-12 col-sm-6">
-                            <div class="row">
-                                <div class="col-6 col-sm-6">
-                                    <div class="box1">
-                                        <p>class="col-xs-12 col-sm-6"</P>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-sm-6">
-                                    <div class="box1">
-                                        <p>class="col-xs-12 col-sm-6"</P>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6 col-sm-6">
-                                    <div class="box2">
-                                        <p>class="col-xs-12 col-sm-6"</P>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-sm-6">
-                                    <div class="box2">
-                                        <p>class="col-xs-12 col-sm-6"</P>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="row">
-                                <div class="col-12 col-sm-12">
-                                    <div class="box3">
-                                        <p>class="col-xs-12 col-sm-6"</P>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
 
 
                     </div>
+
                 </div>
-
-
-
-
-
-                <script>
-                    var today = new Date();
-                    var amOrpm = today.getHours() < 12 ? "AM" : "PM"
-
-                    var hours = (today.getHours() % 12) || 12;
-
-                    var date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
-
-                    var time = hours + ":" + today.getMinutes() + " " + amOrpm;
-
-
-                    var dateTime = time + ' | ' + date;
-
-
-                    document.getElementById('date-time').innerHTML = dateTime;
-                </script>
-
-
-
             </div>
-
         </div>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
-
         <script src="js/jquery.min.js"></script>
         <script src="assets/js/image.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/sidebar.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/chart.js"></script>
+        <script src="draft.js"></script>
 </body>
 
 </html>
