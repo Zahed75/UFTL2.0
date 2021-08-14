@@ -1,28 +1,24 @@
-textarea:focus,
-textarea.form-control:focus,
-input.form-control:focus,
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=email]:focus,
-input[type=number]:focus,
-[type=text].form-control:focus,
-[type=password].form-control:focus,
-[type=email].form-control:focus,
-[type=tel].form-control:focus,
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
 [contenteditable].form-control:focus {
-    box-shadow: inset 0 -1px 0 #ddd;
+  box-shadow: inset 0 -1px 0 #ddd;
 }
 
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus {
-    outline: none;
-    box-shadow: none;
+.btn:focus, .btn:active:focus, .btn.active:focus{
+    outline:none;
+    box-shadow:none;
 }
 
-.custom-form,
-.row-fields select,
-.row-fields select option {
+.custom-form, .row-fields select, .row-fields select option {
     outline: none;
     border: 2px solid rgb(255, 115, 0);
     margin-top: 10px;
@@ -35,14 +31,11 @@ input[type=number]:focus,
     padding-left: 20px;
 }
 
-.custom-form:focus,
-.row-fields select:focus {
-    border: 2px solid rgb(255, 115, 0);
-    ;
+.custom-form:focus, .row-fields select:focus {
+    border: 2px solid rgb(255, 115, 0);;
 }
 
-.row-fields input::placeholder,
-.custom-message::placeholder {
+.row-fields input::placeholder, .custom-message::placeholder {
     color: black;
 }
 
@@ -60,14 +53,12 @@ input[type=number]:focus,
     height: 60px;
     width: 300px;
     border-radius: 10px;
-    background: linear-gradient(90deg, rgba(248, 150, 44, 1) 0%, rgba(239, 60, 38, 1) 100%);
+    background: linear-gradient(90deg, rgba(248,150,44,1) 0%, rgba(239,60,38,1) 100%);
     color: #fff;
 }
 
 @media (max-width: 426px) {
-    .custom-form,
-    .row-fields select,
-    .row-fields select option {
+    .custom-form, .row-fields select, .row-fields select option {
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: 5px;
@@ -78,9 +69,7 @@ input[type=number]:focus,
 }
 
 @media (max-width: 376px) {
-    .custom-form,
-    .row-fields select,
-    .row-fields select option {
+    .custom-form, .row-fields select, .row-fields select option {
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: 5px;
@@ -91,9 +80,7 @@ input[type=number]:focus,
 }
 
 @media (max-width: 321px) {
-    .custom-form,
-    .row-fields select,
-    .row-fields select option {
+    .custom-form, .row-fields select, .row-fields select option {
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: 5px;
