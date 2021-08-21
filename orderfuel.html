@@ -15,11 +15,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/button2.css">
 
-    <link rel="stylesheet" href="css/editprofile.css">
+
     <link rel="stylesheet" href="css/custom-sidebar.css">
     <link rel="stylesheet" href="css/orderfuelsidebar.css">
 
     <link rel="stylesheet" href="css/orderfuel.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+
+    <link rel="stylesheet" href="css/calender.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+
 </head>
 
 <body>
@@ -145,7 +150,7 @@
 
                         <div class="col-6  col-sm-2 col-md-2">
                             <div class="fuelfield">
-                                <p class="fueltype">Diesel</p>
+                                <p id="fuelname" class="fueltype">Diesel</p>
                             </div>
                         </div>
 
@@ -178,57 +183,77 @@
                             <div class="row">
 
                                 <div class="col-6 col-sm-6 col-md-4 ">
-                                    <div class="timeselect">
-                                        <p class="timetableselect">09:30 PM</p>
-                                    </div>
+                                    <input class="checkbox-tools" type="radio" name="tools" id="tool-1">
+                                    <label class="for-checkbox-tools" for="tool-1">
+                                        <i class='uil uil-line-alt'></i>
+                                        09:30 PM
+                                    </label>
                                 </div>
 
                                 <div class="col-6 col-sm-6 col-md-4 ">
-                                    <div class="time">
-                                        <p class="timetable">09:30 PM</p>
-                                    </div>
+                                    <input class="checkbox-tools" type="radio" name="tools" id="tool-2" disabled>
+                                    <label class="for-checkbox-tools" for="tool-2">
+                                        <i class='uil uil-vector-square'></i>
+                                        10:30 PM
+                                    </label>
                                 </div>
 
                                 <div class="col-6 col-sm-6 col-md-4">
-                                    <div class="time">
-                                        <p class="timetable">09:30 PM</p>
-                                    </div>
+                                    <input class="checkbox-tools" type="radio" name="tools" id="tool-3">
+                                    <label class="for-checkbox-tools" for="tool-3">
+                                        <i class='uil uil-ruler'></i>
+                                        10:30 PM
+                                    </label>
+                                </div>
+
+
+
+                                <div class="col-6 col-sm-6 col-md-4 ">
+                                    <input class="checkbox-tools" type="radio" name="tools" id="tool-4">
+                                    <label class="for-checkbox-tools" for="tool-4">
+                                        <i class='uil uil-crop-alt'></i>
+                                        01:30 PM
+                                    </label>
                                 </div>
 
                                 <div class="col-6 col-sm-6 col-md-4 ">
-                                    <div class="timenone">
-                                        <p class="timetablenone">09:30 PM</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-6 col-sm-6 col-md-4 ">
-                                    <div class="time">
-                                        <p class="timetable">09:30 PM</p>
-                                    </div>
+                                    <input class="checkbox-tools" type="radio" name="tools" id="tool-5">
+                                    <label class="for-checkbox-tools" for="tool-5">
+							<i class='uil uil-brush-alt'></i>
+							03:30 AM
+						</label>
                                 </div>
 
                                 <div class="col-6 col-sm-6 col-md-4">
-                                    <div class="timenone">
-                                        <p class="timetablenone">09:30 PM</p>
-                                    </div>
+                                    <input class="checkbox-tools" type="radio" name="tools" id="tool-6">
+                                    <label class="for-checkbox-tools" for="tool-6">
+							<i class='uil uil-image-resize-landscape'></i>
+							02:30 AM
+						</label>
                                 </div>
 
                                 <div class="col-6 col-sm-6 col-md-4 ">
-                                    <div class="time">
-                                        <p class="timetable">09:30 PM</p>
-                                    </div>
+                                    <input class="checkbox-tools" type="radio" name="tools" id="tool-7">
+                                    <label class="for-checkbox-tools" for="tool-7">
+							<i class='uil uil-image-resize-landscape'></i>
+							02:30 AM
+						</label>
                                 </div>
 
                                 <div class="col-6 col-sm-6 col-md-4 ">
-                                    <div class="timenone">
-                                        <p class="timetablenone">09:30 PM</p>
-                                    </div>
+                                    <input class="checkbox-tools" type="radio" name="tools" id="tool-8">
+                                    <label class="for-checkbox-tools" for="tool-8">
+                                        <i class='uil uil-vector-square'></i>
+                                        10:30 PM
+                                    </label>
                                 </div>
 
                                 <div class="col-6 col-sm-6 col-md-4">
-                                    <div class="time">
-                                        <p class="timetable">09:30 PM</p>
-                                    </div>
+                                    <input class="checkbox-tools" type="radio" name="tools" id="tool-9">
+                                    <label class="for-checkbox-tools" for="tool-9">
+                                        <i class='uil uil-vector-square'></i>
+                                        10:30 PM
+                                    </label>
                                 </div>
 
 
@@ -248,6 +273,31 @@
                                         105/- <small>(5% VAT)</small>
                                     </div>
                                 </div>
+
+
+                                <!-- diesel value -->
+                                <div class="row justify-content-evenly diesel">
+                                    <div class="col-7 dieselprice" id="dpd">
+                                        65
+                                    </div>
+                                </div>
+
+
+                                <!-- octane value -->
+                                <div class="row justify-content-evenly octane">
+                                    <div class="col-7 tol octaneprice" id="opd">
+                                        89
+                                    </div>
+                                </div>
+
+                                <!-- discount -->
+                                <div class="row justify-content-evenly disc">
+                                    <div class="col-7 tol discprice" id="discopd">
+                                        89
+                                    </div>
+                                </div>
+
+
                                 <div class="row">
                                     <div class="col-7 tol">
                                         Discount:
@@ -286,79 +336,41 @@
                         <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="">
                                 <div class="row justify-content-evenly timeline">
-                                    <div class="col-xs-1">
-                                        <div class="timecircle">
-                                            <p class="datepick">31</p>
-                                            <p class="daypick">Today</p>
-                                        </div>
-                                    </div>
+                                    <div class="col">
 
-                                    <div class="col-xs-1">
-                                        <div class="timecircle or">
-                                            <p class="datepick">01</p>
-                                            <p class="daypick">Sun</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-1">
-                                        <div class="timecircle">
-                                            <p class="datepick">02</p>
-                                            <p class="daypick">Mon</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-1">
-                                        <div class="timecircle">
-                                            <p class="datepick">03</p>
-                                            <p class="daypick">Tue</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-1">
-                                        <div class="timecircle">
-                                            <p class="datepick">04</p>
-                                            <p class="daypick">Wed</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-1">
-                                        <div class="timecircle">
-                                            <p class="datepick">05</p>
-                                            <p class="daypick">Thu</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-1">
-                                        <div class="calendercircle">
-                                            <i class='bx bx-calendar-alt calender'></i>
-                                        </div>
-                                    </div>
+                                        <input type="date" value="" placeholder="MM/DD/YYYY" required/>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
+
+
+
+
                         <div class="col-xs-12 col-sm-6 col-md-2">
-                            <div class="cashondelivery">
-                                <div class="marg">
-                                    <i class='bx bx-money money'></i>
-                                    <p class="cash">Cash on delivery</p>
-                                </div>
-                            </div>
+                            <input class="checkbox-budget" type="radio" name="budget" id="budget-1">
+                            <label class="for-checkbox-budget" for="budget-1">
+                            <i class='bx bx-money money'></i>
+							<span data-hover="Cash on delivery">Cash on delivery</span>
+						</label>
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-2">
-                            <div class="creditcard">
-                                <div class="marg">
-                                    <i class='bx bxs-credit-card cardfront'></i>
-                                    <p class="cash">Online Payment</p>
-
-                                </div>
-                            </div>
+                            <input class="checkbox-budget" type="radio" name="budget" id="budget-2">
+                            <label class="for-checkbox-budget" for="budget-2">
+                                <i class='bx bxs-credit-card cardfront'></i>							
+							    <span data-hover="Online Payment">Online Payment</span>
+						    </label>
                         </div>
 
                         <div class="col-xs-12 col-sm-6 col-md-2">
-                            <div class="swipecard">
-                                <div class="marg">
-                                    <img class="cardpunch" src="img/swipe.png" alt="">
-                                    <p class="cash">Swipe on delivery</p>
-                                </div>
-                            </div>
+                            <input class="checkbox-budget" type="radio" name="budget" id="budget-3">
+                            <label class="for-checkbox-budget" for="budget-3">
+                                    <img class="cardpunch" src="img/swipe.png" alt="">							
+							    <span data-hover="Swipe on delivery">Swipe on delivery</span>
+						    </label>
                         </div>
 
                     </div>
@@ -370,7 +382,6 @@
             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
-            <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
 
             <script src="js/jquery.min.js"></script>
             <script src="assets/js/image.js"></script>
@@ -378,11 +389,15 @@
             <script src="js/bootstrap.min.js"></script>
             <script src="js/sidebar.js"></script>
             <script src="js/main.js"></script>
-            <script src="js/chart.js"></script>
-            <script src="draft.js"></script>
 
 
             <script src="js/price.js"></script>
+            <script src="cal/bootstrap-datetimepicker.min.js"></script>
+            <script src="cal/bootstrap.min.js"></script>
+            <script src="cal/jquery.min.js"></script>
+            <script src="cal/main.js"></script>
+            <script src="cal/moment-with-locales.min.js"></script>
+            <script src="cal/popper.js"></script>
 </body>
 
 </html>
