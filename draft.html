@@ -1,183 +1,194 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Order Fuel</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- cdn -->
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="draft.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="invoice.css">
+    <title>Invoice</title>
 </head>
 
 <body>
 
-    <div class="section over-hide z-bigger">
-        <input class="checkbox" type="checkbox" name="general" id="general">
-        <label class="for-checkbox" for="general"></label>
-        <div class="background-color"></div>
-        <div class="section over-hide z-bigger">
-            <div class="container pb-5">
-                <div class="row justify-content-center pb-5">
-                    <div class="col-12 pt-5">
-                        <p class="mb-4 pb-2">Design Tools</p>
-                    </div>
-                    <div class="col-12 pb-5">
-                        <input class="checkbox-tools" type="radio" name="tools" id="tool-1" checked>
-                        <label class="for-checkbox-tools" for="tool-1">
-							<i class='uil uil-line-alt'></i>
-							09:30 PM
-						</label>
-                        <!--
-						--><input class="checkbox-tools" type="radio" name="tools" id="tool-2" disabled>
-                        <label class="for-checkbox-tools" for="tool-2" disabled>
-							<i class='uil uil-vector-square'></i>
-							10:30 PM
-						</label>
-                        <!--
-						--><input class="checkbox-tools" type="radio" name="tools" id="tool-3">
-                        <label class="for-checkbox-tools" for="tool-3">
-							<i class='uil uil-ruler'></i>
-							10:30 PM
-						</label>
-                        <!--
-						--><input class="checkbox-tools" type="radio" name="tools" id="tool-4">
-                        <label class="for-checkbox-tools" for="tool-4">
-							<i class='uil uil-crop-alt'></i>
-							01:30 PM
-						</label>
-                        <!--
-						--><input class="checkbox-tools" type="radio" name="tools" id="tool-5">
-                        <label class="for-checkbox-tools" for="tool-5">
-							<i class='uil uil-brush-alt'></i>
-							03:30 AM
-						</label>
-                        <!--
-						--><input class="checkbox-tools" type="radio" name="tools" id="tool-6">
-                        <label class="for-checkbox-tools" for="tool-6">
-							<i class='uil uil-image-resize-landscape'></i>
-							02:30 AM
-						</label>
-                    </div>
-                    <div class="col-12 pt-1">
-                        <p class="mb-4 pb-2">Client Budget</p>
-                    </div>
-                    <div class="col-xl-10 pb-5">
+    <div class="container main-section">
+        <div class="row">
 
-                        <input class="checkbox-budget" type="radio" name="budget" id="budget-1">
-                        <label class="for-checkbox-budget" for="budget-1">
-                            <i class='bx bx-money money'></i>
-							<span data-hover="Cash on delivery">Cash on delivery</span>
-						</label>
-                        <!--
-						--><input class="checkbox-budget" type="radio" name="budget" id="budget-2">
-                        <label class="for-checkbox-budget" for="budget-2">
-                            <i class='bx bxs-credit-card cardfront'></i>							
-							<span data-hover="Online Payment">Online Payment</span>
-						</label>
-                        <!--
-						--><input class="checkbox-budget" type="radio" name="budget" id="budget-3">
-                        <label class="for-checkbox-budget" for="budget-3">
-                            <img class="cardpunch" src="img/swipe.png" alt="">							
-							<span data-hover="Swipe on delivery">Swipe on delivery</span>
-						</label>
-                        <!--
-						--><input class="checkbox-budget" type="radio" name="budget" id="budget-4">
-                        <label class="for-checkbox-budget" for="budget-4">							
-							<span data-hover="2000$">2000$</span>
-						</label>
-                        <!--
-						--><input class="checkbox-budget" type="radio" name="budget" id="budget-5">
-                        <label class="for-checkbox-budget" for="budget-5">							
-							<span data-hover="2500$">2500$</span>
-						</label>
-                        <!--
-						--><input class="checkbox-budget" type="radio" name="budget" id="budget-6">
-                        <label class="for-checkbox-budget" for="budget-6">							
-							<span data-hover="5000$">5000$</span>
-						</label>
-                    </div>
-                    <div class="col-12 pt-1">
-                        <p class="mb-4 pb-2">Booking Options</p>
-                    </div>
-                    <div class="col-12 pb-5">
-                        <input class="checkbox-booking" type="checkbox" name="booking" id="booking-1">
-                        <label class="for-checkbox-booking" for="booking-1">
-							<i class='uil uil-coffee mr-3'></i><span class="text">breakfast</span>
-						</label>
-                        <!--
-						--><input class="checkbox-booking" type="checkbox" name="booking" id="booking-2">
-                        <label class="for-checkbox-booking" for="booking-2">							
-							<i class='uil uil-restaurant mr-3'></i><span class="text">dinner</span>
-						</label>
-                        <!--
-						--><input class="checkbox-booking" type="checkbox" name="booking" id="booking-3">
-                        <label class="for-checkbox-booking" for="booking-3">							
-							<i class='uil uil-car-sideview mr-3'></i><span class="text">pick up</span>
-						</label>
-                        <!--
-						--><input class="checkbox-booking" type="checkbox" name="booking" id="booking-4">
-                        <label class="for-checkbox-booking" for="booking-4">							
-							<i class='uil uil-flower mr-3'></i><span class="text">garden</span>
-						</label>
-                        <!--
-						--><input class="checkbox-booking" type="checkbox" name="booking" id="booking-5">
-                        <label class="for-checkbox-booking" for="booking-5">							
-							<i class='uil uil-wifi mr-3'></i><span class="text">internet</span>
-						</label>
-                        <!--
-						--><input class="checkbox-booking" type="checkbox" name="booking" id="booking-6">
-                        <label class="for-checkbox-booking" for="booking-6">							
-							<i class='uil uil-parking-square mr-3'></i><span class="text">parking</span>
-						</label>
-                        <!--
-						--><input class="checkbox-booking" type="checkbox" name="booking" id="booking-7">
-                        <label class="for-checkbox-booking" for="booking-7">							
-							<i class='uil uil-tv-retro mr-3'></i><span class="text">television</span>
-						</label>
-                        <!--
-						--><input class="checkbox-booking" type="checkbox" name="booking" id="booking-8">
-                        <label class="for-checkbox-booking" for="booking-8">							
-							<i class='uil uil-books mr-3'></i><span class="text">books</span>
-						</label>
-                        <!--
-						--><input class="checkbox-booking" type="checkbox" name="booking" id="booking-9">
-                        <label class="for-checkbox-booking" for="booking-9">							
-							<i class='uil uil-kayak mr-3'></i><span class="text">kayak</span>
-						</label>
-                        <!--
-						--><input class="checkbox-booking" type="checkbox" name="booking" id="booking-10">
-                        <label class="for-checkbox-booking" for="booking-10">							
-							<i class='uil uil-glass-martini-alt mr-3'></i><span class="text">drink</span>
-						</label>
-                        <!--
-						--><input class="checkbox-booking" type="checkbox" name="booking" id="booking-11">
-                        <label class="for-checkbox-booking" for="booking-11">							
-							<i class='uil uil-dumbbell mr-3'></i><span class="text">gym</span>
-						</label>
-                        <!--
-						--><input class="checkbox-booking" type="checkbox" name="booking" id="booking-12">
-                        <label class="for-checkbox-booking" for="booking-12">							
-							<i class='uil uil-sign-alt mr-3'></i><span class="text">walking tours</span>
-						</label>
+            <div class="col-4">
+                <div class="logo">
+                    <img src="img/drop.png" class="logo" alt="">
+                    <div class="urgentfuel">
+                        <p>Urgent</p>
+                        <p>Fuel</p>
                     </div>
                 </div>
             </div>
+
+            <div class="col-4 address">
+                <div class="uftladdress">
+                    <p>Ventura Iconia, Level 3,</p>
+                    <p>House 37, Road 11, Block H,</p>
+                    <p class="dhaka">Banani, Dhaka-1213</p>
+                </div>
+            </div>
+
+            <div class="col-4 contact">
+                <div class="uftlcontact">
+                    <div class="sameline">
+
+                        <p class="sameline">Contact:</p><strong> 01624131260</strong>
+                    </div>
+                    <div class="sameline">
+
+                        <p class="sameline">Email:</p><strong> urgent.fuel@gmail.com</strong>
+                    </div>
+
+
+                    <div class="sameline">
+                        <p class="sameline">TIN NUMBER:</p><strong> 01624131260</strong>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <!-- Link to page
-	================================================== -->
+    <!-- <div class="container">
+        <div class="row">
 
-    <a href="https://front.codes" class="link-to-page" target="_blank"><img src="https://assets.codepen.io/1462889/fcy.png" alt=""></a>
+            <div class="col-xs-12 col-sm-6">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-6"</P>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-6"</P>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-6"</P>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-6"</P>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-4 col-sm-4">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-6 col-md-3"</p>
+                </div>
+            </div>
+
+            <div class="col-xs-2 col-sm-2">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-6 col-md-3"</p>
+                </div>
+            </div>
+
+            <div class="col-xs-3 col-sm-3">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-6 col-md-3"</p>
+                </div>
+            </div>
+
+            <div class="col-xs-3 col-sm-3">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-6 col-md-3"</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-3 ">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-4"</p>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-4"</p>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-4"</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-6 ">
+
+            </div>
+
+            <div class="col-2">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-4"</p>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-4"</p>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-4"</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-5">
+                <div class="box">
+                    <p>class="col-xs-12 col-sm-4"</p>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
 
 </body>
 
