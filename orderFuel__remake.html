@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Order Fuel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- cdn -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button2.css">
+
+
+    <link rel="stylesheet" href="css/custom-sidebar.css">
+    <link rel="stylesheet" href="css/orderfuelsidebar.css">
+
+    <link rel="stylesheet" href="css/orderfuel.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/checkbox__re.css">
+
+    <link rel="stylesheet" href="css/calender.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-2 pt-1">
+
+                <a href="#" class="nav__logo">
+                    <div class="logoside">
+                        <img class="logoimage" src="assets/img/logo.svg" alt="My Happy SVG" />
+                        <div class="tex">
+                            <p class="text1">URGENT</p>
+                            <p class="text2">FUEL</p>
+                        </div>
+                    </div>
+
+                </a>
+
+                <a href="#" class="img logo rounded-circle mb-2" style="background-image: url(assets/img/saul.png);">
+                </a>
+                <h3 class="text-center mb-4 username">Saul Ramirez</h3>
+
+
+
+                <ul class="list-unstyled components mb-2 p-2">
+
+                    <li>
+                        <a href="#"><i class='bx bxs-dashboard setup'></i>Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class='bx bx-list-check setup'></i>Place an Order</a>
+                    </li>
+
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class='bx bx-info-circle setup'></i>Assets</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="#"><i class='bx bx-radio-circle-marked setup'></i>All Assets</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class='bx bx-radio-circle-marked setup'></i>Add an Asset</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class='bx bx-clipboard setup'></i>Reporting</a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <ion-icon class="setup" name="settings-outline"></ion-icon>Edit Profile
+                        </a>
+                    </li>
+
+
+                    <div class="logout">
+                        <button class="livechat" type="submit" id="sendMessageButton">Live Chat</button>
+                        <div class="logoutline"></div>
+                        <li>
+                            <a href="#">
+                                <ion-icon class="setup" name="log-out-outline"></ion-icon>
+                                </ion-icon>Log Out
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <div class="footer">
+                    <p>
+
+                    </p>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-3">
+
+            <nav class="">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+
+                    <div class="float-right">
+                        <div class=" menu ">
+                            <div class="header__img ">
+                                <img class="navimage" src="assets/img/saul.png " alt=" ">
+
+                            </div>
+
+                            <ion-icon class="arrowleft" name="arrow-back-outline"></ion-icon>
+                            <p class="back">Back to Home</p>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+            <form method="POST">
+                <div id="content" class="p-4 p-md-5">
+
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-12  col-sm-6 col-md-4">
+                                <div class="assetselect asset__container">
+
+                                    <div class="selected__asset" id="selectedAsset">
+                                        <span>My Generator</span>
+                                    </div>
+
+                                    <div class="asset__options">
+                                        <ul>
+                                            <li onclick="selectAsset()" data-value="Diesel">
+                                                <span>Generator</span>
+                                            </li>
+                                            <li onclick="selectAsset()" data-value="Gasoline">
+                                                <span>Vehicles</span>
+                                            </li>
+                                            <li onclick="selectAsset()" data-value="Kerosene">
+                                                <span>Construction</span>
+                                            </li>
+                                            <li onclick="selectAsset()" data-value="LPG">
+                                                <span>Machines</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+
+                            <div class="col-6  col-sm-2 col-md-2">
+                                <div class="fuelfield">
+                                    <p id="fuelname" class="fueltype">Diesel</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6  col-sm-2 col-md-3">
+
+                                <div class="fuelfield">
+                                    <div class="quantity">
+                                        <input type="text" id="quantity" name="fuelamount" value="20">L
+
+
+                                        <div class="plusminus">
+                                            <button class="btn plus-btn" type="button">+</button>
+                                            <button class="btn minus-btn disabled" type="button">-</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12  col-sm-2 col-md-3">
+                                <div class="fuelprice">
+                                    <p id="fuel" class="fuel">1300/-</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="row checkbox__remake">
+                                    <div class="col-6 col-sm-6 col-md-4">
+                                        <label for="tool-1" onclick="check_re(this)">
+                                            <input type="radio" value="09:00 AM" name="tools" id="tool-1"
+                                                class="checkbox__re">
+                                            <span>09:00 AM</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4">
+                                        <label for="tool-2" onclick="check_re(this)">
+                                            <input type="radio" value="10:00 AM" name="tools" id="tool-2"
+                                                class="checkbox__re" disabled>
+                                            <span>10:00 AM</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4">
+                                        <label for="tool-3" onclick="check_re(this)">
+                                            <input type="radio" value="11:00 AM" name="tools" id="tool-3"
+                                                class="checkbox__re">
+                                            <span>11:00 AM</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4">
+                                        <label for="tool-4" onclick="check_re(this)">
+                                            <input type="radio" value="12:00 AM" name="tools" id="tool-4"
+                                                class="checkbox__re">
+                                            <span>12:00 AM</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4">
+                                        <label for="tool-5" onclick="check_re(this)">
+                                            <input type="radio" value="02:00 PM" name="tools" id="tool-5"
+                                                class="checkbox__re">
+                                            <span>02:00 PM</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4">
+                                        <label for="tool-6" onclick="check_re(this)">
+                                            <input type="radio" value="03:00 PM" name="tools" id="tool-6"
+                                                class="checkbox__re">
+                                            <span>03:00 PM</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4">
+                                        <label for="tool-7" onclick="check_re(this)">
+                                            <input type="radio" value="04:00 PM" name="tools" id="tool-7"
+                                                class="checkbox__re">
+                                            <span>04:00 PM</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4">
+                                        <label for="tool-8" onclick="check_re(this)">
+                                            <input type="radio" value="05:00 PM" name="tools" id="tool-8"
+                                                class="checkbox__re">
+                                            <span>05:00 PM</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-4">
+                                        <label for="tool-9" onclick="check_re()">
+                                            <input type="radio" value="06:00 PM" name="tools" id="tool-9"
+                                                class="checkbox__re">
+                                            <span>06:00 PM</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="price p-4">
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-7 tol ">
+                                            Delivery Fee:
+                                        </div>
+                                        <div class="col-5 tol">
+                                            105/- <small>(5% VAT)</small>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- diesel value -->
+                                    <div class="row justify-content-evenly diesel">
+                                        <div class="col-7 dieselprice" id="dpd">
+                                            65
+                                        </div>
+                                    </div>
+
+
+                                    <!-- octane value -->
+                                    <div class="row justify-content-evenly octane">
+                                        <div class="col-7 tol octaneprice" id="opd">
+                                            89
+                                        </div>
+                                    </div>
+
+                                    <!-- discount -->
+                                    <div class="row justify-content-evenly disc">
+                                        <div class="col-7 tol discprice" id="discopd">
+                                            89
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-7 tol">
+                                            Discount:
+                                        </div>
+                                        <div class="col-5 tol">
+                                            0/-
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7 tol">
+                                            Total Price
+
+                                        </div>
+                                        <div class="col-5 tol">
+                                            <p class="total-price">
+                                                <!-- <span><i class="fa fa-rupee"></i></span> -->
+                                                <span id="price">0/-</span>
+                                                <span> BDT</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-12 tol">
+                                            Apply a voucher
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="">
+                                    <div class="row justify-content-evenly timeline">
+                                        <div class="col datePicker__re">
+                                            <input type="date" value="" placeholder="MM/DD/YYYY" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-xs-12 col-sm-6 col-md-2">
+                                <input class="checkbox-budget" type="radio" name="budget" id="budget-1">
+                                <label class="for-checkbox-budget" for="budget-1">
+                                    <i class='bx bx-money money'></i>
+                                    <span data-hover="Cash on delivery">Cash on delivery</span>
+                                </label>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-2">
+                                <input class="checkbox-budget" type="radio" name="budget" id="budget-2">
+                                <label class="for-checkbox-budget" for="budget-2">
+                                    <i class='bx bxs-credit-card cardfront'></i>
+                                    <span data-hover="Online Payment">Online Payment</span>
+                                </label>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-2">
+                                <input class="checkbox-budget" type="radio" name="budget" id="budget-3">
+                                <label class="for-checkbox-budget" for="budget-3">
+                                    <img class="cardpunch" src="img/swipe.png" alt="">
+                                    <span data-hover="Swipe on delivery">Swipe on delivery</span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+            <script src="js/jquery.min.js"></script>
+            <script src="assets/js/image.js"></script>
+            <script src="js/popper.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/sidebar.js"></script>
+            <script src="js/main.js"></script>
+
+
+            <script src="js/price.js"></script>
+            <script src="cal/bootstrap-datetimepicker.min.js"></script>
+            <script src="cal/bootstrap.min.js"></script>
+            <script src="cal/jquery.min.js"></script>
+            <script src="cal/main.js"></script>
+            <script src="cal/moment-with-locales.min.js"></script>
+            <script src="cal/popper.js"></script>
+            <script src="js/checkbox__re.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

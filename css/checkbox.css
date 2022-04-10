@@ -1,6 +1,6 @@
 /* Please ❤ this if you like it! */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
 :root {
     --white: #ffffff;
     --light: #f0eff3;
@@ -11,7 +11,6 @@
     --yellow: #f8ab37;
     --grey: #ecedf3;
 }
-
 
 /* #Primary
 ================================================== */
@@ -58,7 +57,7 @@ mark {
     transition: all 300ms linear;
 }
 
-.checkbox:checked~.background-color {
+.checkbox:checked ~ .background-color {
     background-color: var(--white);
 }
 
@@ -73,8 +72,8 @@ mark {
     visibility: hidden;
 }
 
-.checkbox:checked+label,
-.checkbox:not(:checked)+label {
+.checkbox:checked + label,
+.checkbox:not(:checked) + label {
     position: relative;
     width: 70px;
     display: inline-block;
@@ -89,10 +88,10 @@ mark {
     z-index: 100 !important;
 }
 
-.checkbox:checked+label:before,
-.checkbox:not(:checked)+label:before {
+.checkbox:checked + label:before,
+.checkbox:not(:checked) + label:before {
     position: absolute;
-    font-family: 'unicons';
+    font-family: "unicons";
     cursor: pointer;
     top: -17px;
     z-index: 2;
@@ -106,28 +105,29 @@ mark {
     transition: all 300ms linear;
 }
 
-.checkbox:not(:checked)+label:before {
-    content: '\eac1';
+.checkbox:not(:checked) + label:before {
+    content: "\eac1";
     left: 0;
     color: var(--grey);
     background-color: var(--dark-light);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(26, 53, 71, 0.07);
 }
 
-.checkbox:checked+label:before {
-    content: '\eb8f';
+.checkbox:checked + label:before {
+    content: "\eb8f";
     left: 30px;
     color: var(--yellow);
     background-color: var(--dark-blue);
-    box-shadow: 0 4px 4px rgba(26, 53, 71, 0.25), 0 0 0 1px rgba(26, 53, 71, 0.07);
+    box-shadow: 0 4px 4px rgba(26, 53, 71, 0.25),
+        0 0 0 1px rgba(26, 53, 71, 0.07);
 }
 
-.checkbox:checked~.section .container .row .col-12 p {
+.checkbox:checked ~ .section .container .row .col-12 p {
     color: var(--dark-blue);
 }
 
-.checkbox-tools:checked+label,
-.checkbox-tools:not(:checked)+label {
+.checkbox-tools:checked + label,
+.checkbox-tools:not(:checked) + label {
     position: relative;
     display: inline-block;
     padding: 7px;
@@ -149,13 +149,12 @@ mark {
     transition: all 300ms linear;
 }
 
-.checkbox-tools:not(:checked)+label {
+.checkbox-tools:not(:checked) + label {
     border: 2px solid #ff6f00;
     color: #ff6f00;
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
 }
-
 
 /* .checkbox-tools:not(:disabled)+label {
     border: 2px solid #red;
@@ -164,19 +163,19 @@ mark {
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
 } */
 
-.checkbox-tools:checked+label {
+.checkbox-tools:checked + label {
     background-color: transparent;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.checkbox-tools:not(:checked)+label:hover {
+.checkbox-tools:not(:checked) + label:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.checkbox-tools:checked+label::before,
-.checkbox-tools:not(:checked)+label::before {
+.checkbox-tools:checked + label::before,
+.checkbox-tools:not(:checked) + label::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     left: 0;
     width: 100%;
@@ -186,21 +185,27 @@ mark {
     z-index: -1;
 }
 
-.checkbox-tools:checked+label .uil,
-.checkbox-tools:not(:checked)+label .uil {
+.checkbox-tools:checked + label .uil,
+.checkbox-tools:not(:checked) + label .uil {
     font-size: 24px;
     line-height: 24px;
     display: block;
     padding-bottom: 10px;
 }
 
-.checkbox:checked~.section .container .row .col-12 .checkbox-tools:not(:checked)+label {
+.checkbox:checked
+    ~ .section
+    .container
+    .row
+    .col-12
+    .checkbox-tools:not(:checked)
+    + label {
     background-color: var(--light);
     box-shadow: 0 1x 4px 0 rgba(0, 0, 0, 0.05);
 }
 
-.checkbox-budget:checked+label,
-.checkbox-budget:not(:checked)+label {
+.checkbox-budget:checked + label,
+.checkbox-budget:not(:checked) + label {
     position: relative;
     display: inline-block;
     padding: 0;
@@ -230,25 +235,25 @@ mark {
     color: #989898;
 }
 
-.checkbox-budget:not(:checked)+label {
+.checkbox-budget:not(:checked) + label {
     border: 2px solid #989898;
     background-color: var(--dark-light);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
-.checkbox-budget:checked+label {
+.checkbox-budget:checked + label {
     background-color: transparent;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.checkbox-budget:not(:checked)+label:hover {
+.checkbox-budget:not(:checked) + label:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.checkbox-budget:checked+label::before,
-.checkbox-budget:not(:checked)+label::before {
+.checkbox-budget:checked + label::before,
+.checkbox-budget:not(:checked) + label::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     left: 0;
     width: 100%;
@@ -258,14 +263,14 @@ mark {
     z-index: -1;
 }
 
-.checkbox-budget:checked+label span,
-.checkbox-budget:not(:checked)+label span {
+.checkbox-budget:checked + label span,
+.checkbox-budget:not(:checked) + label span {
     position: relative;
     display: block;
 }
 
-.checkbox-budget:checked+label span::before,
-.checkbox-budget:not(:checked)+label span::before {
+.checkbox-budget:checked + label span::before,
+.checkbox-budget:not(:checked) + label span::before {
     position: absolute;
     content: attr(data-hover);
     top: 0;
@@ -282,23 +287,29 @@ mark {
     transition: max-height 0.3s;
 }
 
-.checkbox-budget:not(:checked)+label span::before {
+.checkbox-budget:not(:checked) + label span::before {
     max-height: 0;
 }
 
-.checkbox-budget:checked+label span::before {
+.checkbox-budget:checked + label span::before {
     max-height: 100%;
 }
 
-.checkbox:checked~.section .container .row .col-xl-10 .checkbox-budget:not(:checked)+label {
+.checkbox:checked
+    ~ .section
+    .container
+    .row
+    .col-xl-10
+    .checkbox-budget:not(:checked)
+    + label {
     background-color: var(--light);
     -webkit-text-stroke: 1px var(--dark-blue);
     text-stroke: 1px var(--dark-blue);
     box-shadow: 0 1x 4px 0 rgba(0, 0, 0, 0.05);
 }
 
-.checkbox-booking:checked+label,
-.checkbox-booking:not(:checked)+label {
+.checkbox-booking:checked + label,
+.checkbox-booking:not(:checked) + label {
     position: relative;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -332,22 +343,22 @@ mark {
     transition: all 300ms linear;
 }
 
-.checkbox-booking:not(:checked)+label::before {
+.checkbox-booking:not(:checked) + label::before {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
-.checkbox-booking:checked+label::before {
+.checkbox-booking:checked + label::before {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.checkbox-booking:not(:checked)+label:hover::before {
+.checkbox-booking:not(:checked) + label:hover::before {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.checkbox-booking:checked+label::before,
-.checkbox-booking:not(:checked)+label::before {
+.checkbox-booking:checked + label::before,
+.checkbox-booking:not(:checked) + label::before {
     position: absolute;
-    content: '';
+    content: "";
     top: -2px;
     left: -2px;
     width: calc(100% + 4px);
@@ -359,17 +370,17 @@ mark {
     transition: all 300ms linear;
 }
 
-.checkbox-booking:not(:checked)+label::before {
+.checkbox-booking:not(:checked) + label::before {
     top: -1px;
     left: -1px;
     width: calc(100% + 2px);
     height: calc(100% + 2px);
 }
 
-.checkbox-booking:checked+label::after,
-.checkbox-booking:not(:checked)+label::after {
+.checkbox-booking:checked + label::after,
+.checkbox-booking:not(:checked) + label::after {
     position: absolute;
-    content: '';
+    content: "";
     top: -2px;
     left: -2px;
     width: calc(100% + 4px);
@@ -381,31 +392,31 @@ mark {
     transition: all 300ms linear;
 }
 
-.checkbox-booking:checked+label::after {
+.checkbox-booking:checked + label::after {
     opacity: 0;
 }
 
-.checkbox-booking:checked+label .uil,
-.checkbox-booking:not(:checked)+label .uil {
+.checkbox-booking:checked + label .uil,
+.checkbox-booking:not(:checked) + label .uil {
     font-size: 20px;
 }
 
-.checkbox-booking:checked+label .text,
-.checkbox-booking:not(:checked)+label .text {
+.checkbox-booking:checked + label .text,
+.checkbox-booking:not(:checked) + label .text {
     position: relative;
     display: inline-block;
     -webkit-transition: opacity 300ms linear;
     transition: opacity 300ms linear;
 }
 
-.checkbox-booking:checked+label .text {
+.checkbox-booking:checked + label .text {
     opacity: 0.6;
 }
 
-.checkbox-booking:checked+label .text::after,
-.checkbox-booking:not(:checked)+label .text::after {
+.checkbox-booking:checked + label .text::after,
+.checkbox-booking:not(:checked) + label .text::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 0;
     left: 0;
     top: 50%;
@@ -417,22 +428,46 @@ mark {
     transition: all 300ms linear;
 }
 
-.checkbox-booking:not(:checked)+label .text::after {
+.checkbox-booking:not(:checked) + label .text::after {
     width: 0;
 }
 
-.checkbox-booking:checked+label .text::after {
+.checkbox-booking:checked + label .text::after {
     width: 100%;
 }
 
-.checkbox:checked~.section .container .row .col-12 .checkbox-booking:not(:checked)+label,
-.checkbox:checked~.section .container .row .col-12 .checkbox-booking:checked+label {
+.checkbox:checked
+    ~ .section
+    .container
+    .row
+    .col-12
+    .checkbox-booking:not(:checked)
+    + label,
+.checkbox:checked
+    ~ .section
+    .container
+    .row
+    .col-12
+    .checkbox-booking:checked
+    + label {
     background-color: var(--light);
     color: var(--dark-blue);
 }
 
-.checkbox:checked~.section .container .row .col-12 .checkbox-booking:checked+label::after,
-.checkbox:checked~.section .container .row .col-12 .checkbox-booking:not(:checked)+label::after {
+.checkbox:checked
+    ~ .section
+    .container
+    .row
+    .col-12
+    .checkbox-booking:checked
+    + label::after,
+.checkbox:checked
+    ~ .section
+    .container
+    .row
+    .col-12
+    .checkbox-booking:not(:checked)
+    + label::after {
     background-color: var(--light);
 }
 
@@ -451,8 +486,8 @@ mark {
     display: block;
 }
 
-input[type="radio"][disabled]+label {
+input[type="radio"][disabled] + label {
     color: #989898;
-    background-color: #DEDEDE;
-    border-color: #DEDEDE;
+    background-color: #dedede;
+    border-color: #dedede;
 }
