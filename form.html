@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/img/uf-og-image.jpg" />
+    <meta name="title" property="og:title" content="Urgent Fuel - Refuelling Logistics Platform">
+    <meta property="og:description"
+        content="Urgent Fuel is a safe, efficient, and data-driven fuel delivery logistics platform powered by cutting-edge technology" />
     <title>Login</title>
 
     <!-- Google fonts -->
@@ -12,12 +17,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- Bootstap cdn -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/form.css">
 </head>
+
 <body>
-    
+
     <div class="container">
         <div class="form-section d-flex justify-content-center align-items-center my-5">
             <form method="POST" class="form-group">
@@ -25,42 +32,50 @@
                     <input type="text" placeholder="Full Name*" class="form-control custom-form">
                     <input type="text" placeholder="Company Name" class="form-control custom-form">
                 </div>
-                
+
                 <div class="row-fields d-flex flex-row flex-wrap">
                     <input type="number" placeholder="Phone Number*" class="form-control custom-form">
                     <input type="text" placeholder="Email (Optional)" class="form-control custom-form">
                 </div>
-                
+
                 <div class="row-fields d-flex flex-row flex-wrap">
                     <select class="custom-form" name="fuel_type">
                         <option selected disabled>Fuel Type*</option>
                         <option value="Disel">Disel</option>
                         <option value="Octen">Octen</option>
                     </select>
-                    
+
                     <select class="custom-form" name="order_area">
                         <option selected disabled>Order Area*</option>
                         <option value="Dhaka">Dhaka</option>
                         <option value="Azimpur">Azimpur</option>
                     </select>
                 </div>
-                
+
                 <div class="row-fields d-flex flex-row flex-wrap">
                     <input type="number" placeholder="Fuel Amount*" class="form-control custom-form">
                     <input type="text" placeholder="What is (7-5)?*" class="form-control custom-form">
                 </div>
 
-                <textarea name="message" rows="5" class="form-control custom-message" placeholder="Message (Optional)"></textarea>
+                <textarea name="message" rows="5" class="form-control custom-message"
+                    placeholder="Message (Optional)"></textarea>
                 <div class="d-flex flex-row-reverse">
                     <input type="submit" value="Submit" class="btn custom-btn">
                 </div>
             </form>
-        </div> 
+        </div>
     </div>
 
     <script src="./js/all.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

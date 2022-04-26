@@ -5,6 +5,10 @@
     <title>Profile Setup</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:image" content="/img/uf-og-image.jpg" />
+    <meta name="title" property="og:title" content="Urgent Fuel - Refuelling Logistics Platform">
+    <meta property="og:description"
+        content="Urgent Fuel is a safe, efficient, and data-driven fuel delivery logistics platform powered by cutting-edge technology" />
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -37,7 +41,8 @@
                         <span class="nav__logo-name">Bedimcode</span> -->
                 </a>
 
-                <a href="#" class="img logo rounded-circle mb-2" style="background-image: url(assets/img/saul.png);"> </a>
+                <a href="#" class="img logo rounded-circle mb-2" style="background-image: url(assets/img/saul.png);">
+                </a>
                 <h3 class="text-center mb-5 username">Saul Ramirez</h3>
 
 
@@ -47,7 +52,8 @@
                     <li>
 
                         <a href="#">
-                            <ion-icon class="setup" name="person-outline"></ion-icon> Setup Profile</a>
+                            <ion-icon class="setup" name="person-outline"></ion-icon> Setup Profile
+                        </a>
                     </li>
 
 
@@ -77,7 +83,7 @@
                     <button type="button" id="sidebarCollapse" class="btn btn-primary">
                         <i class="fa fa-bars"></i>
                         <span class="sr-only">Toggle Menu</span>
-                     </button>
+                    </button>
 
 
 
@@ -117,32 +123,34 @@
                                         </div>
                                         <div class="col-sm-6 col-md-3 fuel">
 
-                                            <input type="text" name="fuel-amount" class="fuel-input" placeholder="Asset Name*">
+                                            <input type="text" name="fuel-amount" class="fuel-input"
+                                                placeholder="Asset Name*">
                                             <p class="help-block"></p>
                                         </div>
 
                                         <div class="col-sm-6 col-md-3 fuel">
                                             <select name="fuel-type" class="selectbox">
-                                                        <option selected disabled value="select">Asset type*</option>
-                                                        <option value="Diesel">Generator</option>
-                                                        <option value="Gasoline">Vehicles</option>
-                                                        <option value="Kerosene">Construction</option>
-                                                        <option value="LPG">Machines</option>
-                                                    </select>
+                                                <option selected disabled value="select">Asset type*</option>
+                                                <option value="Diesel">Generator</option>
+                                                <option value="Gasoline">Vehicles</option>
+                                                <option value="Kerosene">Construction</option>
+                                                <option value="LPG">Machines</option>
+                                            </select>
                                             <p class="help-block"></p>
                                         </div>
 
                                         <div class="col-sm-6 col-md-3 fuel">
                                             <select name="fuel-type" class="selectbox">
-                                                        <option selected disabled value="select">Fuel Type*</option>
-                                                        <option value="Diesel">Diesel</option>
-                                                        <option value="Gasoline">Octane</option>
-                                                </select>
+                                                <option selected disabled value="select">Fuel Type*</option>
+                                                <option value="Diesel">Diesel</option>
+                                                <option value="Gasoline">Octane</option>
+                                            </select>
                                             <p class="help-block"></p>
                                         </div>
 
                                         <div class="col-sm-6 col-md-3 fuel">
-                                            <input type="text" name="fuel-amount" class="fuel-input" placeholder="Asset Location*">
+                                            <input type="text" name="fuel-amount" class="fuel-input"
+                                                placeholder="Asset Location*">
                                             <p class="help-block"></p>
                                         </div>
 
@@ -156,23 +164,37 @@
 
                                                 <div class="image-upload-wrap">
 
-                                                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                                                    <input class="file-upload-input" type='file'
+                                                        onchange="readURL(this);" accept="image/*" />
                                                     <div class="drag-text">
                                                         <p class="drag2">Photo/Logo (Optional)</p>
-                                                        <svg class="icon-image2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM5 19V5h14l.002 14H5z"></path><path d="m10 14-1-1-3 4h12l-5-7z"></path></svg>
-                                                        <h3 class="drapanddrop">Drag and drop a photo or<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">browse</button>a file or upload!
+                                                        <svg class="icon-image2" xmlns="http://www.w3.org/2000/svg"
+                                                            width="50" height="50" viewBox="0 0 24 24"
+                                                            style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                                            <path
+                                                                d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM5 19V5h14l.002 14H5z">
+                                                            </path>
+                                                            <path d="m10 14-1-1-3 4h12l-5-7z"></path>
+                                                        </svg>
+                                                        <h3 class="drapanddrop">Drag and drop a photo or<button
+                                                                class="file-upload-btn" type="button"
+                                                                onclick="$('.file-upload-input').trigger( 'click' )">browse</button>a
+                                                            file or upload!
                                                         </h3>
                                                     </div>
                                                 </div>
                                                 <div class="file-upload-content">
                                                     <img class="file-upload-image" src="#" alt="your image" />
                                                     <div class="image-title-wrap">
-                                                        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                                        <button type="button" onclick="removeUpload()"
+                                                            class="remove-image">Remove <span
+                                                                class="image-title">Uploaded Image</span></button>
                                                     </div>
                                                 </div>
 
 
-                                                <button class="fuel-ordery" onclick="Show1()" type="button" id="sendMessageButton">Next</button>
+                                                <button class="fuel-ordery" onclick="Show1()" type="button"
+                                                    id="sendMessageButton">Next</button>
 
                                             </div>
 
@@ -195,36 +217,41 @@
                                         </div>
 
                                         <div class="col-sm-6 col-md-3 fuel">
-                                            <input type="text" name="fuel-amount" class="fuel-input" placeholder="Full Name*">
+                                            <input type="text" name="fuel-amount" class="fuel-input"
+                                                placeholder="Full Name*">
                                             <p class="help-block"></p>
                                         </div>
 
                                         <div class="col-sm-6 col-md-3 fuel">
-                                            <input type="text" name="fuel-amount" class="fuel-input" placeholder="Company Name">
+                                            <input type="text" name="fuel-amount" class="fuel-input"
+                                                placeholder="Company Name">
                                             <p class="help-block"></p>
                                         </div>
 
                                         <div class="col-sm-6 col-md-3 fuel">
-                                            <input type="number" name="fuel-amount" class="fuel-input" placeholder="Phone Number*">
+                                            <input type="number" name="fuel-amount" class="fuel-input"
+                                                placeholder="Phone Number*">
                                             <p class="help-block"></p>
                                         </div>
 
                                         <div class="col-sm-6 col-md-3 fuel">
-                                            <input type="email" name="fuel-amount" class="fuel-input" placeholder="Email">
+                                            <input type="email" name="fuel-amount" class="fuel-input"
+                                                placeholder="Email">
                                             <p class="help-block"></p>
                                         </div>
 
                                         <div class="col-sm-6 col-md-3 fuel">
                                             <select name="fuel-type" class="area">
-                                                                <option selected disabled value="select">Area*</option>
-                                                                <option value="Diesel">Generator</option>
-                                                                <option value="Gasoline">Vehicles</option>
-                                                                <option value="Kerosene">Construction</option>
-                                                                <option value="LPG">Machines</option>
-                                                            </select>
+                                                <option selected disabled value="select">Area*</option>
+                                                <option value="Diesel">Generator</option>
+                                                <option value="Gasoline">Vehicles</option>
+                                                <option value="Kerosene">Construction</option>
+                                                <option value="LPG">Machines</option>
+                                            </select>
                                             <p class="help-block"></p>
                                         </div>
-                                        <button class="previous" type="button" onclick="Show2()" id="sendMessageButton">Previous</button>
+                                        <button class="previous" type="button" onclick="Show2()"
+                                            id="sendMessageButton">Previous</button>
                                     </div>
 
                                     <div class="col-sm-7 col-md-3 contactimage">
@@ -236,18 +263,31 @@
 
                                                     <div class="image-upload-wrap">
 
-                                                        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                                                        <input class="file-upload-input" type='file'
+                                                            onchange="readURL(this);" accept="image/*" />
                                                         <div class="drag-text">
                                                             <p class="drag2">Photo/Logo (Optional)</p>
-                                                            <svg class="icon-image2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM5 19V5h14l.002 14H5z"></path><path d="m10 14-1-1-3 4h12l-5-7z"></path></svg>
-                                                            <h3 class="drapanddrop">Drag and drop a photo or<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">browse</button>a file or upload!
+                                                            <svg class="icon-image2" xmlns="http://www.w3.org/2000/svg"
+                                                                width="50" height="50" viewBox="0 0 24 24"
+                                                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                                                <path
+                                                                    d="M19 3H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM5 19V5h14l.002 14H5z">
+                                                                </path>
+                                                                <path d="m10 14-1-1-3 4h12l-5-7z"></path>
+                                                            </svg>
+                                                            <h3 class="drapanddrop">Drag and drop a photo or<button
+                                                                    class="file-upload-btn" type="button"
+                                                                    onclick="$('.file-upload-input').trigger( 'click' )">browse</button>a
+                                                                file or upload!
                                                             </h3>
                                                         </div>
                                                     </div>
                                                     <div class="file-upload-content">
                                                         <img class="file-upload-image" src="#" alt="your image" />
                                                         <div class="image-title-wrap">
-                                                            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                                            <button type="button" onclick="removeUpload()"
+                                                                class="remove-image">Remove <span
+                                                                    class="image-title">Uploaded Image</span></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -257,20 +297,22 @@
 
                                             <div class="col-sm-6 col-md-3 fuel">
                                                 <select name="fuel-type" class="city">
-                                                                    <option selected disabled value="select">City*</option>
-                                                                    <option value="Dhaka">Dhaka</option>
-                                                                    <option value="Chittagong">Chittagong</option>
-                                                                    
-                                                                </select>
+                                                    <option selected disabled value="select">City*</option>
+                                                    <option value="Dhaka">Dhaka</option>
+                                                    <option value="Chittagong">Chittagong</option>
+
+                                                </select>
                                                 <p class="help-block"></p>
                                             </div>
 
                                             <div class="col-sm-6 col-md-3 fuel">
-                                                <input type="text" name="fuel-amount" class="billingaddress" placeholder="Billing Address*">
+                                                <input type="text" name="fuel-amount" class="billingaddress"
+                                                    placeholder="Billing Address*">
                                                 <p class="help-block"></p>
                                             </div>
 
-                                            <button class="fuel-ordery" type="submit" id="sendMessageButton">Save</button>
+                                            <button class="fuel-ordery" type="submit"
+                                                id="sendMessageButton">Save</button>
                                         </div>
                                     </div>
                                 </div>

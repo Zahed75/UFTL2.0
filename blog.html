@@ -6,18 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta property="og:image" content="/img/uf-og-image.jpg" />
+    <meta name="title" property="og:title" content="Urgent Fuel - Refuelling Logistics Platform">
+    <meta property="og:description"
+        content="Urgent Fuel is a safe, efficient, and data-driven fuel delivery logistics platform powered by cutting-edge technology" />
     <title>UFTL-Blog</title>
 
     <!--Bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/all.css">
-        <link rel="stylesheet" href="css/style-blog.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="./css/navbar-rest.css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style-blog.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/navbar-rest.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!--Fonts cdn-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
@@ -34,74 +38,78 @@
                 <div class="row">
 
                     <!-- ==============Desktop version navbar section start============== -->
-                <nav class="navbar-expand-lg d-flex flex-row justify-content-between align-items-center">
-                    <div class="brand-logo"><img src="./img/logo-2.png" alt=""></div>
-                    <div class="links d-flex flex-row align-items-center">
-                        <a href="index.html" class="to-close">Home</a>
-                        <a href="#" class="to-close">Service</a>
-                        <a href="blog.html" class="to-close">Blog</a>
-                        <a href="about.html" class="to-close">About Us</a>
-                        <a href="#" class="to-close">Contact</a>
-                    </div>
-                    <div class="search">
-                        <div class="icons d-flex flex-row">
-                            <div class="search-box d-flex flex-row align-items-center justify-content-between"
-                                id="search">
-                                <input class="search-txt" type="text" name="" placeholder="Search">
-                                <a class="search-btn" href="#">
-                                    <i class="fas fa-search"></i>
+                    <nav class="navbar-expand-lg d-flex flex-row justify-content-between align-items-center">
+                        <div class="brand-logo"><img src="./img/logo-2.png" alt=""></div>
+                        <div class="links d-flex flex-row align-items-center">
+                            <a href="index.html" class="to-close">Home</a>
+                            <a href="#" class="to-close">Service</a>
+                            <a href="blog.html" class="to-close">Blog</a>
+                            <a href="about.html" class="to-close">About Us</a>
+                            <a href="#" class="to-close">Contact</a>
+                        </div>
+                        <div class="search">
+                            <div class="icons d-flex flex-row">
+                                <div class="search-box d-flex flex-row align-items-center justify-content-between"
+                                    id="search">
+                                    <input class="search-txt" type="text" name="" placeholder="Search">
+                                    <a class="search-btn" href="#">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="to-close">
+                                <button class="custom-btn">Login</button>
+                            </a>
+                            <a href="#" class="to-close">
+                                <button class="custom-btn">Signup</button>
+                            </a>
+                        </div>
+                        <!-- ==============Desktop version navbar section end============== -->
+
+                        <!-- --------------------------------------------------------------------------------------- -->
+
+                        <!-- =========== Phone version Slide nav section start ================ -->
+                        <div id="slidenav" class="slidenav">
+                            <a href="javascript:void(0)" class="closeicon" id="closeicon" onclick="closenav()"><i
+                                    class="fas fa-times"></i></a>
+                            <div class="search-box-phone d-flex flex-row" id="search">
+                                <input class="search-txt-phone to-open" type="text" name="" placeholder="Search">
+                                <a class="search-btn-phone to-open" href="#">
+                                    <i class="fas fa-search to-open"></i>
+                                </a>
+                            </div>
+
+                            <div class="navbar-links">
+                                <a class="nav_items to-open" href="index.html"><i
+                                        class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
+                                <a class="nav_items to-open" href="#"><i
+                                        class="fas fa-cogs"></i>&nbsp;&nbsp;&nbsp;Services</a>
+                                <a class="nav_items to-open" href="blog.html"><i
+                                        class="fas fa-pen-nib"></i>&nbsp;&nbsp;&nbsp;Blogs</a>
+                                <a class="nav_items to-open" href="about.html"><i
+                                        class="fas fa-tint"></i>&nbsp;&nbsp;&nbsp;About
+                                    Us</a>
+                                <a class="nav_items to-open" href="#"><i
+                                        class="fas fa-phone-alt"></i>&nbsp;&nbsp;&nbsp;Call
+                                    now</a>
+                            </div>
+                            <div class="buttons-phone mt-2">
+                                <a href="#">
+                                    <button><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Login
+                                    </button>
+                                </a><br>
+                                <a href="#">
+                                    <button><i class="far fa-user"></i>&nbsp;&nbsp;&nbsp;Signup</button>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="buttons">
-                        <a href="#" class="to-close">
-                            <button class="custom-btn">Login</button>
-                        </a>
-                        <a href="#" class="to-close">
-                            <button class="custom-btn">Signup</button>
-                        </a>
-                    </div>
-                    <!-- ==============Desktop version navbar section end============== -->
+                        <span class="menuicon to-open" id="menuicon" onclick="opennav()"><i
+                                class="fas fa-bars"></i></span>
 
-                    <!-- --------------------------------------------------------------------------------------- -->
-
-                    <!-- =========== Phone version Slide nav section start ================ -->
-                    <div id="slidenav" class="slidenav">
-                        <a href="javascript:void(0)" class="closeicon" id="closeicon" onclick="closenav()"><i
-                                class="fas fa-times"></i></a>
-                        <div class="search-box-phone d-flex flex-row" id="search">
-                            <input class="search-txt-phone to-open" type="text" name="" placeholder="Search">
-                            <a class="search-btn-phone to-open" href="#">
-                                <i class="fas fa-search to-open"></i>
-                            </a>
-                        </div>
-
-                        <div class="navbar-links">
-                            <a class="nav_items to-open" href="index.html"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
-                            <a class="nav_items to-open" href="#"><i
-                                    class="fas fa-cogs"></i>&nbsp;&nbsp;&nbsp;Services</a>
-                            <a class="nav_items to-open" href="blog.html"><i
-                                    class="fas fa-pen-nib"></i>&nbsp;&nbsp;&nbsp;Blogs</a>
-                            <a class="nav_items to-open" href="about.html"><i class="fas fa-tint"></i>&nbsp;&nbsp;&nbsp;About
-                                Us</a>
-                            <a class="nav_items to-open" href="#"><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;&nbsp;Call
-                                now</a>
-                        </div>
-                        <div class="buttons-phone mt-2">
-                            <a href="#">
-                                <button><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Login
-                                </button>
-                            </a><br>
-                            <a href="#">
-                                <button><i class="far fa-user"></i>&nbsp;&nbsp;&nbsp;Signup</button>
-                            </a>
-                        </div>
-                    </div>
-                    <span class="menuicon to-open" id="menuicon" onclick="opennav()"><i class="fas fa-bars"></i></span>
-
-                    <!-- ===========Phone version Slide nav section end ================ -->
-                </nav>
+                        <!-- ===========Phone version Slide nav section end ================ -->
+                    </nav>
                 </div>
 
                 <div class="row">
@@ -109,10 +117,10 @@
                         <img class="heading-images img-fluid" src="img/BLOGS.png" alt="">
                     </div>
                 </div>
-        <!-- =============================navbar end===============-->
+                <!-- =============================navbar end===============-->
 
 
-                   <!-- =================Mid Banner start================= -->
+                <!-- =================Mid Banner start================= -->
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="container main-body">
@@ -120,8 +128,8 @@
                                 <div class="col-sm-5 text-section">
                                     <h1 class="card-heading" id="h">How to save fuel by ordering it online!</h1>
                                     <p class="card-text">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the
                                         1500s, when an unknown printer took a galley of type and....
                                     </p>
                                     <a href="#">
@@ -141,7 +149,7 @@
         <!-- =================Mid Banner end================= -->
 
 
-<!-- ============================Blog Content Start=================== -->
+        <!-- ============================Blog Content Start=================== -->
 
 
         <div class="blogsec">
@@ -158,42 +166,42 @@
                                 <img class="img-img" src="img/card-1.png" alt="">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>Can Virtual reality save fuel usage!</span></div>
                                 <img src="img/card-2.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>Why online fuel pump safer than</span></div>
                                 <img src="img/card-3.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-4.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-5.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-6.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-7.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-8.png" alt="">
                             </div>
-                        </div>             
+                        </div>
                     </div>
                 </div>
 
@@ -209,42 +217,42 @@
                                 <img class="img-img" src="img/card-1.png" alt="">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>Can Virtual reality save fuel usage!</span></div>
                                 <img src="img/card-2.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>Why online fuel pump safer than</span></div>
                                 <img src="img/card-3.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-4.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-5.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-6.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-7.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-8.png" alt="">
                             </div>
-                        </div>             
+                        </div>
                     </div>
                 </div>
 
@@ -260,42 +268,42 @@
                                 <img class="img-img" src="img/card-1.png" alt="">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>Can Virtual reality save fuel usage!</span></div>
                                 <img src="img/card-2.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>Why online fuel pump safer than</span></div>
                                 <img src="img/card-3.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-4.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-5.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-6.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-7.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-8.png" alt="">
                             </div>
-                        </div>             
+                        </div>
                     </div>
                 </div>
 
@@ -311,42 +319,42 @@
                                 <img class="img-img" src="img/card-1.png" alt="">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>Can Virtual reality save fuel usage!</span></div>
                                 <img src="img/card-2.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>Why online fuel pump safer than</span></div>
                                 <img src="img/card-3.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-4.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-5.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-6.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-7.png" alt="">
                             </div>
-                            
+
                             <div class="slider-body2">
                                 <div class="img-text"><span>How Internet of Things is changing the world!</span></div>
                                 <img src="img/card-8.png" alt="">
                             </div>
-                        </div>             
+                        </div>
                     </div>
                 </div>
 
@@ -359,8 +367,10 @@
                         <div class="col-sm 12">
                             <div class="input-fields ml-auto">
                                 <form class="form-group">
-                                    <input class= "form-control input-field" type="text" name="" id="" placeholder="Your name">
-                                    <input class= "form-control input-field" type="text" name="" id="" placeholder="Your email">
+                                    <input class="form-control input-field" type="text" name="" id=""
+                                        placeholder="Your name">
+                                    <input class="form-control input-field" type="text" name="" id=""
+                                        placeholder="Your email">
                                 </form>
                             </div>
                         </div>
@@ -370,7 +380,7 @@
         </div>
 
     </div>
-<!-- ============================Blog Content end=================== -->
+    <!-- ============================Blog Content end=================== -->
 
 
 
@@ -381,11 +391,11 @@
 
 
 
-        <!-- ================== Footer start================== -->
+    <!-- ================== Footer start================== -->
 
 
 
-        <!-- ================== Footer end ================== -->
+    <!-- ================== Footer end ================== -->
 
 
 
@@ -393,7 +403,7 @@
 
 
 
-        <!-- =================Fotter Start============== -->
+    <!-- =================Fotter Start============== -->
 
     <!-- Footer -->
     <footer class="ft">
@@ -472,8 +482,10 @@
                                     <li><a href=""><img src="img2/facebook.png" alt=""></a></li>
                                     <li><a href=""><img src="img2/linkedin.png" alt=""></a></li>
                                     <li><a href=""><img src="img2/instagram.png" alt=""></a></li>
-                                    <li><a href=""><img src="img2/twitter.png" alt=""><a><li>
-                                    <li><a href=""><img src="img2/cb.png" alt=""><a><li> 
+                                    <li><a href=""><img src="img2/twitter.png" alt=""><a>
+                                    <li>
+                                    <li><a href=""><img src="img2/cb.png" alt=""><a>
+                                    <li>
                                 </ul>
                             </div>
                         </div>
@@ -507,9 +519,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </body>
 
 </html>
